@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<head>
+    <link rel="stylesheet" type="text/css" href="resources/style/background.css">
+    <link rel="stylesheet" type="text/css" href="resources/style/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/jillyH.png">
+
+    <title> Jillyfish </title>
+</head>
+<body class="background">
+    <div class="container">
+
+        <img src="resources/img/Jillyfish_Text_Header.png" id="jf-header">
+
+        <div class="mid">
+            <img src="resources/img/JillyCircle.png" id="jf-headshot">
+            <div class="links">
+                <a class="link" href="http://twitch.jilly.fish"><div class="item link-button" id="twitch-link"><p id="link-text">Twitch</p></div></a>
+                <a class="link" href="http://youtube.jilly.fish"><div class="item link-button" id="youtube-link"><p id="link-text">YouTube</p></div></a>
+                <a class="link" href="http://insta.jilly.fish"><div class="item link-button" id="insta-link"><p id="link-text">Instagram</p></div></a>
+                <a class="link" href="http://twitter.jilly.fish"><div class="item link-button" id="twitter-link"><p id="link-text">Twitter</p></div></a>
+                <a class="link" href="https://discord.gg/fishpond"><div class="item link-button" id="discord-link"><p id="link-text">Discord</p></div></a> 
+            </div>
+        </div>
+        <!-- Embed Twitch Stream -->
+        <div id="twitch-embed"></div>
+    </div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+            width: 854,
+            height: 480,
+            channel: "jillyfish"
+        });
+    </script>
+</body>
+
