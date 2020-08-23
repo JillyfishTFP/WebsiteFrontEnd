@@ -1,0 +1,10 @@
+/* Set the background image */
+.background {
+    /* This is probably not best practice... */
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%
+}
+

@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.links {
+    list-style-type: none;
+    margin-left: 15px
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.link-button {
+    height: 45px;
+    width: 40vw;
+    max-width: 600px;
+    text-align: center;
+    border: 3px solid white;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+
+#jf-header {
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    max-height: 226px;
+    align-self: flex-center;
+}
+
+.mid #jf-headshot {
+    height: 249px;
+    width: 249px;
+    border-radius: 1000px;
+    padding:6px;
+    background: #feb8e1; /* Fallback for browsers that do not support gradients. */
+    background: -webkit-linear-gradient(#feb8e1, #8d68ea);
+    background: -o-linear-gradient(#feb8e1, #8d68ea);
+    background: -moz-linear-gradient(#feb8e1, #8d68ea);
+    background: linear-gradient(#feb8e1, #8d68ea);
+    align-self: flex-start;
+    margin: 25px;
+}
+
+.links {
+    align-items: row;
+    flex-direction: column;
+}
+
+.link-text {
+    align-self: flex-center;
+    font-family: 'Karla', 'Karla', sans-serif;
+}
+
+#twitch-link {
+    background: #8764ec; /* Fallback for browsers that do not support gradients. */
+    background: -webkit-linear-gradient(#8764ec, #8d68ea);
+    background: -o-linear-gradient(#8764ec, #8d68ea);
+    background: -moz-linear-gradient(#8764ec, #8d68ea);
+    background: linear-gradient(#8764ec, #8d68ea);
+}
+
+#youtube-link {
+    background: #916be9; /* Fallback for browsers that do not support gradients. */
+    background: -webkit-linear-gradient(#916be9, #966fe7);
+    background: -o-linear-gradient(#916be9, #966fe7);
+    background: -moz-linear-gradient(#916be9, #966fe7);
+    background: linear-gradient(#916be9, #966fe7);
+}
+
+#insta-link {
+    background: #9c73e5; /* Fallback for browsers that do not support gradients. */
+    background: -webkit-linear-gradient(#9c73e5, #a277e3);
+    background: -o-linear-gradient(#9c73e5, #a277e3);
+    background: -moz-linear-gradient(#9c73e5, #a277e3);
+    background: linear-gradient(#9c73e5, #a277e3);
+}
+
+#twitter-link {
+    background: #a67ae2; /* Fallback for browsers that do not support gradients. */
+    background: -webkit-linear-gradient(#a67ae2, #ac7ee0);
+    background: -o-linear-gradient(#a67ae2, #ac7ee0);
+    background: -moz-linear-gradient(#a67ae2, #ac7ee0);
+    background: linear-gradient(#a67ae2, #ac7ee0);
+}
+
+#discord-link {
+    background: #b182df; /* Fallback for browsers that do not support gradients. */
+    background: -webkit-linear-gradient(#b182df, #b786dd);
+    background: -o-linear-gradient(#b182df, #b786dd);
+    background: -moz-linear-gradient(#b182df, #b786dd);
+    background: linear-gradient(#b182df, #b786dd);
+}
+
+.item {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 854px) {
+    #twitch-embed {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .link-button {
+        width: 80vw;
+    }
+}
+
